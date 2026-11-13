@@ -1,0 +1,9 @@
+{
+  "key": "kami",
+  "name": "KAMI 9",
+  "description": "origami animal procession",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.3, .6, .95], c: .4, w: .5, k: { p: .3, s: [2, 1], o: [6], z: .9 } }"
+}

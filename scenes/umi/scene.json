@@ -1,0 +1,9 @@
+{
+  "key": "umi",
+  "name": "UMI POP",
+  "description": "superflat singing sea",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.32, .6, 1.05], c: .7, w: .4, k: { p: .2, s: [12], o: [16, 1], z: .9 } }"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "sol",
+  "name": "SOL 70",
+  "description": "superflat flower power",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.25, .55, 1.1], c: .7, w: .6, k: { p: .2, s: [12], o: [16, 6, 1], z: .9 } }",
+  "auto": "{ tier: 1, kind: 'flat', kal: [0, 0, 0, 6, 8], bars: 48, tr: ['shatter', 'melt'], fx: { chroma: 0.25, bloom: 0.74 } }"
+}

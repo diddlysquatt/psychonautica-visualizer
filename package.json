@@ -1,0 +1,16 @@
+{
+  "name": "psychonautica-visualizer",
+  "version": "0.24.0",
+  "private": true,
+  "description": "An audio-reactive WebGL2 music visualizer that runs from one HTML file, and the tools to make scenes for it.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs . dist/psychonautica-visualizer.html",
+    "check": "node tools/check-scene.mjs",
+    "check:template": "node tools/check-scene.mjs _template"
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}

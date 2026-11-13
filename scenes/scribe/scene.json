@@ -1,0 +1,9 @@
+{
+  "key": "scribe",
+  "name": "GL1PH",
+  "description": "an illuminated book the size of a cathedral floor, in a script nobody can read, written stroke by stroke by the music",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.2, .6, 1.6], c: .35, w: .7, k: { p: .3, s: [2, 4], o: [8, 6], z: 1 } }"
+}

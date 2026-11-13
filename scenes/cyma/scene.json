@@ -1,0 +1,10 @@
+{
+  "key": "cyma",
+  "name": "CYMA",
+  "description": "a temple of singing sand, crossed by travelling sound waves",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.15, .5, 2.4], c: .45, w: .7, k: { p: .5, s: [12, 16], o: [6, 8], z: .9, cyc: true } }",
+  "auto": "{ tier: 2, kind: 'flat', kal: [6, 0, 8, 12], kalCycle: true, bars: 32, tr: ['kaleido', 'melt'], fx: {} }"
+}

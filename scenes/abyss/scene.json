@@ -1,0 +1,10 @@
+{
+  "key": "abyss",
+  "name": "ABYSS",
+  "description": "a leviathan jellyfish wider than the frame over a court of spiralling jellies; drops plunge the camera between twilight, lightless midnight and a vent garden",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.2, .45, .95], c: .35, w: .6, k: { p: .5, s: [8, 6, 12], o: [4, 1], z: 1.15, cyc: true }, hold: (V) => !!(V.c && V.c.dvP < 1) }",
+  "auto": "{ tier: 1, kind: '3d', kal: [6, 8, 12], kalCycle: true, bars: 48, tr: ['melt', 'leak', 'vortex'], fx: { bloom: 0.98, trails: 0.68, warp: 0.62 } }"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "merc",
+  "name": "BOOMB0X",
+  "description": "kawaii sound-system wall: every band lights its own tiles like a giant level meter, a shockwave runs out on every kick, everyone hops on the snare, mouths sing the vocals",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.25, .45, .8], c: .5, w: .6, k: { p: .3, s: [12, 8], o: [6, 1], z: .9 } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [0, 0, 6], bars: 32, tr: ['melt', 'leak'], fx: { bloom: 0.95, chroma: 0.55 } }"
+}

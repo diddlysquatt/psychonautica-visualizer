@@ -1,0 +1,9 @@
+{
+  "key": "tykes",
+  "name": "TYK3S",
+  "description": "the machine elf overlay: interlocking clockwork elves, laughing",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.3, .6, .92], c: .4, w: .7, k: { p: .4, s: [8, 6, 5], o: [12, 16], z: 1 }, hold: (V) => !!(V.c && (V.c.wipeOn || V.c.pop || V.c.mrun || V.c.jg)) }"
+}

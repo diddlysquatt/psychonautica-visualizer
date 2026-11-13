@@ -1,0 +1,10 @@
+{
+  "key": "lattice",
+  "name": "LED 06",
+  "description": "Hyperbolic LED honeycombs",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.55, .55, .55], c: 0, w: 0, k: { p: .25, s: [6, 12], o: [1, 2, 8], z: 1 } }",
+  "auto": "{ tier: 1, kind: 'tunnel', kal: [0, 0, 6, 8], bars: 32, tr: ['portal', 'kaleido'], fx: {} }"
+}

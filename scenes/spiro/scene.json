@@ -1,0 +1,10 @@
+{
+  "key": "spiro",
+  "name": "GUILL0",
+  "description": "an engraved neon banknote sheet",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.35, .5, .95], c: .5, w: .3, k: { p: .5, s: [8, 12, 4], o: [2, 6, 16], z: .95 } }",
+  "auto": "{ tier: 2, kind: 'flat', kal: [0, 6, 8, 12], kalCycle: true, bars: 32, tr: ['kaleido', 'vortex'], fx: {} }"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "kubik",
+  "name": "KUB1K",
+  "description": "bold cubes dancing in formation",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.25, .42, .85], c: .5, w: .6, k: { p: .7, s: [2, 1], o: [12, 6, 8], z: .95, cyc: true } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [2, 0, 6, 8], bars: 32, tr: ['shatter', 'mosh', 'portal'], fx: { warp: 0.25, chroma: 0.35, trails: 0.5 } }"
+}

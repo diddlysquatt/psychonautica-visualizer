@@ -1,0 +1,113 @@
+</style>
+</head>
+<body>
+<canvas id="stage" aria-label="Audio-reactive fractal visualizer. Move the pointer to bend the image."></canvas>
+<div id="cur" aria-hidden="true"></div>
+
+<header id="realmTag" class="fade">
+  <div class="realm-line"><h1 class="realm-name" id="realmName">MUMM3</h1><span id="bpmTag"></span></div>
+</header>
+
+<nav id="tools" class="fade" aria-label="View">
+  <button id="autoBtn" class="ibtn auto-pill" data-autoshow aria-pressed="true" title="Auto Show (S): the best show, chosen for you" aria-label="Auto Show"><i aria-hidden="true"></i>AUTO</button>
+  <button id="helpBtn" class="ibtn txt" title="Shortcuts (?)" aria-label="Show keyboard shortcuts">?</button>
+  <button id="minimalToggleBtn" class="ibtn" title="Hide interface (H)" aria-label="Hide interface" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 5C6.5 5 2.7 9.4 1.5 12c1.2 2.6 5 7 10.5 7s9.3-4.4 10.5-7C21.3 9.4 17.5 5 12 5zm0 11.2A4.2 4.2 0 1 1 12 7.8a4.2 4.2 0 0 1 0 8.4zm0-6.4a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4z"/></svg></button>
+  <button id="recBtn" class="ibtn" title="Record video (X)" aria-label="Record video" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg></button>
+  <button id="fsBtn" class="ibtn" title="Fullscreen (F)" aria-label="Toggle fullscreen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5v2H6v3H4zm11-5h5v5h-2V6h-3V4zm3 11h2v5h-5v-2h3v-3zM4 15h2v3h3v2H4v-5z"/></svg></button>
+  <button id="guiToggleButton" class="ibtn" title="Controls (G)" aria-label="Open controls" aria-expanded="false" aria-controls="panel"><svg viewBox="0 0 24 24"><path d="M3 6h9v2H3zm13 0h5v2h-5zm-2-2h2v6h-2zM3 16h4v2H3zm7 0h11v2H10zm-2-2h2v6H8zM3 11h13v2H3zm16 0h2v2h-2zm-2-2h2v6h-2z"/></svg></button>
+</nav>
+
+<section id="dock" class="glass fade" aria-label="Music">
+  <div class="sources" role="group" aria-label="Audio source">
+    <button class="src" data-src="demo" aria-pressed="false" title="Built-in demo track, synthesised live"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.3L21 9l-5 4.3L17.5 20 12 16.6 6.5 20 8 13.3 3 9l6.6-.7z"/></svg><span>Demo</span></button>
+    <button class="src" data-src="file" aria-pressed="false" title="Play your own audio files"><svg viewBox="0 0 24 24"><path d="M10 4l2 2h8a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6z"/></svg><span>Files</span></button>
+    <button class="src" data-src="mic" aria-pressed="false" title="Listen through the microphone"><svg viewBox="0 0 24 24"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1a7 7 0 0 0 6-6.9h-2z"/></svg><span>Mic</span></button>
+    <button class="src" data-src="tab" aria-pressed="false" title="Capture audio from another tab or the whole system (Chrome, Edge)"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-7v2h3v2H7v-2h3v-2H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2v8h16V7H4z"/></svg><span>Tab</span></button>
+    <button class="src mobile-only" data-src="visual" aria-pressed="false" title="Silent visual demo: a synthetic beat drives the picture, no sound"><svg viewBox="0 0 24 24"><path d="M3 10h2v4H3zm4-4h2v12H7zm4 3h2v6h-2zm4-6h2v18h-2zm4 5h2v8h-2z"/></svg><span>Silent</span></button>
+  </div>
+  <div class="transport">
+    <button id="prevBtn" class="ibtn sm" aria-label="Previous track" disabled><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zm14 0v14L9 12z"/></svg></button>
+    <button id="playBtn" class="play" aria-label="Play" disabled><svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"/></svg></button>
+    <button id="nextBtn" class="ibtn sm" aria-label="Next track" disabled><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+  </div>
+  <div class="track">
+    <div class="track-name" id="trackName">Pick a source to begin</div>
+    <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek" disabled>
+    <div class="track-sub"><span id="tCur">0:00</span><span id="srcLabel">Drop audio files anywhere</span><span id="tDur">0:00</span></div>
+  </div>
+  <label class="vol" title="Volume"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 5V4L8 9H4zm12.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4z"/></svg><input id="volume" type="range" min="0" max="1" step="0.01" value="0.9" aria-label="Volume"></label>
+</section>
+
+<aside id="panel" class="glass" aria-label="Controls">
+  <div class="p-head">
+    <button id="autoShowBtn" class="auto-big" data-autoshow aria-pressed="true" title="Auto Show (S): picks scenes, order, transitions, kaleidoscope and effects. Change any setting marked auto to take it over."><span class="switch" aria-hidden="true"></span><b>Auto Show</b><small id="autoState">on</small></button>
+    <button id="autoAllBack" class="mini-btn" hidden title="Give every manual setting back to the Auto Show" aria-label="Give every manual setting back to the Auto Show">&#8634; all</button>
+    <button class="ibtn sm" id="panelClose" aria-label="Close controls" title="Close (G)"><svg viewBox="0 0 24 24"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4L12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg></button>
+  </div>
+  <div id="ctlHost"></div>
+  <details class="p-group" id="grp-music" data-sec="music"><summary>Music</summary><div class="g-body">
+    <ol id="plList" class="pl-list" aria-label="Music queue"></ol>
+    <p id="plEmpty" class="pl-empty">Drop music or a folder anywhere</p>
+  </div></details>
+  <details class="p-group" id="grp-realms" data-sec="realms"><summary>Scenes</summary><div class="g-body"><div class="realms" id="realmChips"></div></div></details>
+  <div class="p-foot"><button id="reseedBtn" title="New variation of this scene (R)">New variation</button><button id="panelHelpBtn" title="Shortcuts and gestures (?)">Shortcuts</button><button id="resetBtn" title="Reset every control (Auto Show chooses everything again)">Reset</button><div class="p-credit"><span class="by" data-by></span><span class="links" data-links></span></div></div>
+</aside>
+
+<div id="hud" class="glass fade" hidden>
+  <canvas id="hudSpec" width="456" height="104"></canvas>
+  <div class="hud-row"><span id="hudBpm">--- BPM</span><span class="beats" id="hudBeats"><i></i><i></i><i></i><i></i></span><span id="hudState">IDLE</span></div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<div id="help" class="glass" hidden role="dialog" aria-modal="false" aria-labelledby="helpTitle">
+  <h2 id="helpTitle">Steering the trip</h2>
+  <p class="desktop-only">Scroll or pinch to zoom; the zoom rests for a moment at the default framing. In Auto Show the camera keeps each scene wide and makes short visits in and out by itself.</p>
+  <p class="mobile-only">On a phone only the scene on screen and the next one are prepared; others load when you pick them.</p>
+  <div class="keys mobile-only">
+    <div><kbd>Swipe</kbd>Next or previous scene</div>
+    <div><kbd>Tap</kbd>Next kaleidoscope fold</div>
+    <div><kbd>Tap top or bottom</kbd>Bring back the interface</div>
+    <div><kbd>Pinch</kbd>Zoom in or out</div>
+    <div><kbd>Hold</kbd>Open the controls</div>
+  </div>
+  <div class="keys desktop-only">
+    <div><kbd>Space</kbd>Play or pause</div>
+    <div><kbd>&larr;</kbd><kbd>&rarr;</kbd>Previous or next scene</div>
+    <div><kbd>1</kbd>&ndash;<kbd>9</kbd>Jump to a scene</div>
+    <div><kbd>S</kbd>Auto Show on or off</div>
+    <div><kbd>A</kbd>Auto Show on or off</div>
+    <div><kbd>L</kbd>Favourite this scene</div>
+    <div><kbd>B</kbd>Trigger a drop</div>
+    <div><kbd>R</kbd>New variation of this scene</div>
+    <div><kbd>K</kbd>Cycle kaleidoscope</div>
+    <div><kbd>C</kbd>Next palette</div>
+    <div><kbd>+</kbd><kbd>&minus;</kbd>Energy</div>
+    <div><kbd>T</kbd>Tap tempo</div>
+    <div><kbd>G</kbd>Controls</div>
+    <div><kbd>V</kbd>Beat monitor</div>
+    <div><kbd>H</kbd>Hide interface</div>
+    <div><kbd>F</kbd>Fullscreen</div>
+    <div><kbd>X</kbd>Record video</div>
+    <div><kbd>0</kbd>Reset zoom</div>
+    <div><kbd>Double-click</kbd>Next scene</div>
+    <div><kbd>?</kbd>This panel</div>
+  </div>
+</div>
+
+<div id="dropzone" hidden>Drop music or a folder</div>
+
+<div id="splash">
+  <div class="sp-card">
+    <button class="sp-enter" data-start="demo">enter</button>
+    <div class="sp-alt"><button class="sp-link" data-start="file">my music</button><button class="sp-link" data-start="tab">tab audio</button><button class="sp-link" data-start="mic">mic</button><button class="sp-link mobile-only" data-start="visual">silent demo</button></div>
+    <div class="sp-warn">flashing lights &middot; <button class="sp-link" id="safeBtn" aria-pressed="false">reduce</button></div>
+    <div class="sp-status" id="spStatus" role="status" aria-live="polite">Ready to load · adaptive resolution · 1x detail</div>
+    <div class="sp-credit"><span class="by" data-by></span><span class="links" data-links></span></div>
+  </div>
+</div>
+
+<input type="file" id="fileInput" accept="audio/*,.mp3,.wav,.ogg,.oga,.m4a,.aac,.flac,.opus,.webm" multiple hidden>
+<input type="file" id="folderInput" webkitdirectory multiple hidden>
+
+<script>

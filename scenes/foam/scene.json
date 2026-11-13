@@ -1,0 +1,10 @@
+{
+  "key": "foam",
+  "name": "The OAM",
+  "description": "Porous fractal chambers",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.3, .5, .8], c: .3, w: .6, k: { p: .45, s: [12, 8], o: [6, 16, 1], z: .9 } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [0, 6, 8, 12], bars: 32, tr: ['vortex', 'melt'], fx: { warp: 0.6 } }"
+}

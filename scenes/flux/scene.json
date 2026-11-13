@@ -1,0 +1,10 @@
+{
+  "key": "flux",
+  "name": "ISOBAR",
+  "description": "Liquid screenprint contour fields",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.28, .5, .9], c: .4, w: .5, k: { p: .5, s: [6, 8, 12], o: [1], z: .9 } }",
+  "auto": "{ tier: 2, kind: 'flat', kal: [0, 6, 8, 12], kalCycle: true, bars: 32, tr: ['melt', 'leak'], fx: {} }"
+}

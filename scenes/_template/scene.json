@@ -1,0 +1,10 @@
+{
+  "key": "template",
+  "name": "TEMPLATE",
+  "description": "an endless flower, one ring of petals per frequency band",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": false,
+  "show": "{ z: [.3, .6, 1.2], c: .4, w: .6, k: { p: .3, s: [6, 8, 12], o: [5, 16], z: .9 } }",
+  "auto": "{ tier: 3, kind: 'flat', kal: [0, 6, 8, 12], bars: 32, tr: ['portal', 'kaleido'], fx: {} }"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "hypr",
+  "name": "L1M1T",
+  "description": "hyperbolic jewel tilings",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.5, .68, 1.1], c: .5, w: .3, k: { p: .45, s: [6, 8], o: [4, 5, 1], z: .95 } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [0, 6, 8, 12], bars: 32, tr: ['portal', 'vortex'], fx: {} }"
+}

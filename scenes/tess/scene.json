@@ -1,0 +1,10 @@
+{
+  "key": "tess",
+  "name": "TESS4",
+  "description": "neon four-dimensional wireframes",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.3, .5, .9], c: .4, w: .5, k: { p: .55, s: [6, 8, 12], o: [16, 1, 2], z: .9, cyc: true } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [6, 8, 0, 12], kalCycle: true, bars: 32, tr: ['kaleido', 'vortex'], fx: { warp: 0.3 } }"
+}

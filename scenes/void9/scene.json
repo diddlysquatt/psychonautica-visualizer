@@ -1,0 +1,10 @@
+{
+  "key": "void9",
+  "name": "VOID 9",
+  "description": "endless stained-glass cathedral",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.2, .5, .8], c: .3, w: .8, k: { p: .3, s: [1, 8], o: [2, 6, 12], z: .9 } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [0, 6, 8, 12], bars: 32, tr: ['portal', 'leak'], fx: {} }"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "petri",
+  "name": "DIAT0M",
+  "description": "psychedelic living microscope slide",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.45, .68, 1.15], c: .5, w: .4, k: { p: .4, s: [12, 8, 16], o: [6, 2, 1], z: .9 } }"
+}

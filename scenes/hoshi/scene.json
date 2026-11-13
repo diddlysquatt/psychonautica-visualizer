@@ -1,0 +1,9 @@
+{
+  "key": "hoshi",
+  "name": "HOSHI 88",
+  "description": "superflat smiling cosmos",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.3, .6, 1.05], c: .6, w: .5, k: { p: .2, s: [12], o: [16, 1], z: .9 } }"
+}

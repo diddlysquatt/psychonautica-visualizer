@@ -1,0 +1,10 @@
+{
+  "key": "eschr",
+  "name": "ESCHR",
+  "description": "living temple city: terraces, screws and pistons that move to the music",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.22, .42, 1.5], c: .3, w: .7, k: { p: .25, s: [1], o: [2], z: 1 } }",
+  "auto": "{ tier: 2, kind: 'flat', kal: [0, 6, 4, 8], bars: 32, tr: ['shatter', 'kaleido'], fx: {} }"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "chroma",
+  "name": "CHROMA",
+  "description": "living plumage of enamel scales pouring through whorls of pure colour",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.25, .6, 1.1], c: .3, w: .6, k: { p: .35, s: [8, 6], o: [12, 16], z: 1.15 } }",
+  "auto": "{ tier: 1, kind: 'flat', kal: [0, 0, 4, 6], bars: 32, tr: ['shatter', 'mosh'], fx: {} }"
+}

@@ -1,0 +1,9 @@
+node_modules/
+check-out/
+dist/*
+!dist/psychonautica-visualizer.html
+gallery/packs/
+_site/
+out/
+__pycache__/
+*.pyc

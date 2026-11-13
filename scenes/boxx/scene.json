@@ -1,0 +1,10 @@
+{
+  "key": "boxx",
+  "name": "BOXX 7",
+  "description": "an endless dive through boxes, and each box opens onto a truly different world: a castle at sunset, a neon city, a giant toadstool forest, a clockwork yard of meshing gears, a crystal valley under an aurora, a candy land, a moon base, a pagoda village, a desert of pyramids, the Rubik towers, a circuit-board megacity, a basalt field in lava, a coral reef, a library of giant books, sky islands above the clouds, and a snow forest; the bass swells every structure, the kick sends a hop and a ring of light, the mids fill the windows and lanterns, the highs light stars and rims, and pulled right out the camera arcs high over each world and still dives through the next door",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.15, .4, .9], c: .35, w: .7, k: { p: .15, s: [12, 6], o: [16, 1], z: 1 } }",
+  "auto": "{ tier: 1, kind: '3d', kal: [0, 0, 8, 12], bars: 32, tr: ['portal', 'shatter'], fx: {} }"
+}

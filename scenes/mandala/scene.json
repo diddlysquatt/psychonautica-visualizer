@@ -1,0 +1,10 @@
+{
+  "key": "mandala",
+  "name": "DALA62",
+  "description": "Living jewelled mandala",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.4, .7, 1.1], c: .5, w: .4, k: { p: .5, s: [6, 8, 1], o: [12, 5, 2, 16], z: .9 } }",
+  "auto": "{ tier: 2, kind: 'flat', kal: [0, 6, 8, 12], bars: 32, tr: ['kaleido', 'vortex'], fx: { warp: 0.4 } }"
+}

@@ -1,0 +1,10 @@
+{
+  "key": "klnn",
+  "name": "KLNN",
+  "description": "Kleinian curl architecture",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.45, .6, 1], c: .4, w: .3, k: { p: .5, s: [6, 8, 12], o: [1, 5, 16], z: .92 } }",
+  "auto": "{ tier: 2, kind: '3d', kal: [0, 6, 8, 12], kalCycle: true, bars: 32, tr: ['vortex', 'kaleido'], fx: {} }"
+}

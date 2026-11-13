@@ -1,0 +1,10 @@
+{
+  "key": "knott",
+  "name": "KN0TT",
+  "description": "Living neon Truchet knotwork",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.2, .38, .65], c: .25, w: .6, k: { p: .45, s: [8, 12], o: [2, 1, 16], z: .95 } }",
+  "auto": "{ tier: 3, kind: 'flat', kal: [0, 6, 8], bars: 24, tr: ['shatter', 'kaleido'], fx: {} }"
+}

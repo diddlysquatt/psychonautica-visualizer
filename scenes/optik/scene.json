@@ -1,0 +1,10 @@
+{
+  "key": "optik",
+  "name": "OPTIK",
+  "description": "neon op-art lens illusions",
+  "author": "Stoned Ape / Psychonautica",
+  "license": "AGPL-3.0-or-later",
+  "builtin": true,
+  "show": "{ z: [.25, .5, 1], c: .4, w: .5, k: { p: .5, s: [6, 12, 1], o: [16, 2, 4], z: .92 } }",
+  "auto": "{ tier: 2, kind: 'flat', kal: [0, 6, 8, 12], kalCycle: true, bars: 32, tr: ['vortex', 'kaleido'], fx: {} }"
+}
